@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<VBox prefWidth="850" prefHeight="600" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.travelagency.controller.ViewPackagesUserController">
+    <children>
+        <Label text="View Packages" />
+        <Button text="View vacations" onAction="#viewVacations"/>
+        <HBox>
+            <Label text="Start Date" />
+            <DatePicker fx:id="startDatePicker" />
+            <Label text="End Date" />
+            <DatePicker fx:id="endDatePicker" />
+            <Label text="Price" />
+            <TextField fx:id="priceTextField"/>
+            <Label text="Destination" />
+            <TextField fx:id="destinationTextField"/>
+            <Button text="Filter" onAction="#filter"/>
+        </HBox>
+        <TableView fx:id="packagesTable" prefHeight="384.0" prefWidth="863.0" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

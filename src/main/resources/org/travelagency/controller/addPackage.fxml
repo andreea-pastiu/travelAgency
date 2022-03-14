@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.DatePicker?>
+<VBox prefWidth="850" prefHeight="600" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.travelagency.controller.AddPackageController">
+    <children>
+        <Label text="Add Package" />
+        <Button fx:id="goHomeButton" text="Home" onAction="#goToHome" />
+        <HBox>
+            <Label text="Name" />
+            <TextField fx:id="nameTextField" />
+        </HBox>
+        <HBox>
+            <Label text="Price" />
+            <TextField fx:id="priceTextField" />
+        </HBox>
+        <HBox>
+            <Label text="Start Date" />
+            <DatePicker fx:id="startDatePicker" />
+        </HBox>
+        <HBox>
+            <Label text="End Date" />
+            <DatePicker fx:id="endDatePicker" />
+        </HBox>
+        <HBox>
+            <Label text="Extra Details" />
+            <TextField fx:id="extraDetailsTextField" />
+        </HBox>
+        <HBox>
+            <Label text="Maximum Number Of People" />
+            <TextField fx:id="maxPeopleTextField" />
+        </HBox>
+        <Button fx:id="addPackageButton" text="Add Package" onAction="#addPackage" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
